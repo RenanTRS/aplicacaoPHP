@@ -2,16 +2,16 @@
 
 namespace app\controllers;
 
-use app\models\SerialnumberData;
-use app\models\SerialnumberDataSearch;
+use app\models\Serial;
+use app\models\SerialSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * SerialnumberDataController implements the CRUD actions for SerialnumberData model.
+ * SerialController implements the CRUD actions for Serial model.
  */
-class SerialnumberDataController extends Controller
+class SerialController extends Controller
 {
     /**
      * @inheritDoc
@@ -32,12 +32,12 @@ class SerialnumberDataController extends Controller
     }
 
     /**
-     * Lists all SerialnumberData models.
+     * Lists all Serial models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel = new SerialnumberDataSearch();
+        $searchModel = new SerialSearch();
         $dataProvider = $searchModel->search($this->request->queryParams);
 
         return $this->render('index', [
@@ -47,7 +47,7 @@ class SerialnumberDataController extends Controller
     }
 
     /**
-     * Displays a single SerialnumberData model.
+     * Displays a single Serial model.
      * @param integer $id
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
@@ -60,13 +60,13 @@ class SerialnumberDataController extends Controller
     }
 
     /**
-     * Creates a new SerialnumberData model.
+     * Creates a new Serial model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new SerialnumberData();
+        $model = new Serial();
 
         if ($this->request->isPost) {
             if ($model->load($this->request->post()) && $model->save()) {
@@ -82,7 +82,7 @@ class SerialnumberDataController extends Controller
     }
 
     /**
-     * Updates an existing SerialnumberData model.
+     * Updates an existing Serial model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -102,7 +102,7 @@ class SerialnumberDataController extends Controller
     }
 
     /**
-     * Deletes an existing SerialnumberData model.
+     * Deletes an existing Serial model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -116,15 +116,15 @@ class SerialnumberDataController extends Controller
     }
 
     /**
-     * Finds the SerialnumberData model based on its primary key value.
+     * Finds the Serial model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return SerialnumberData the loaded model
+     * @return Serial the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = SerialnumberData::findOne($id)) !== null) {
+        if (($model = Serial::findOne($id)) !== null) {
             return $model;
         }
 

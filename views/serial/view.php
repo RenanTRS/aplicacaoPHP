@@ -4,14 +4,14 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
-/* @var $model app\models\SerialnumberData */
+/* @var $model app\models\Serial */
 
 $this->title = $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'Serialnumber Datas', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Serials', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 ?>
-<div class="serialnumber-data-view">
+<div class="serial-view">
 
     <h1><?= Html::encode($this->title) ?></h1>
 

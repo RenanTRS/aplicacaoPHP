@@ -4,11 +4,11 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model app\models\SerialnumberData */
+/* @var $model app\models\Serial */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="serialnumber-data-form">
+<div class="serial-form">
 
     <?php $form = ActiveForm::begin(); ?>
 

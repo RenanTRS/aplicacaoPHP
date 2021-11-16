@@ -4,11 +4,11 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model app\models\SerialnumberDataSearch */
+/* @var $model app\models\SerialSearch */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="serialnumber-data-search">
+<div class="serial-search">
 
     <?php $form = ActiveForm::begin([
         'action' => ['index'],

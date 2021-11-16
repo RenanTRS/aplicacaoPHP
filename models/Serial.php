@@ -14,7 +14,7 @@ use Yii;
  *
  * @property ProductData $productData
  */
-class SerialnumberData extends \yii\db\ActiveRecord
+class Serial extends \yii\db\ActiveRecord
 {
     /**
      * {@inheritdoc}
