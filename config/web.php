@@ -47,14 +47,19 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                ['class' => 'yii\rest\UrlRule', 'pluralize' => false, 'controller' => 'apiproduto/default'],
+                ['class' => 'yii\rest\UrlRule', 'pluralize' => false, 'controller' => 'apiserial/default']
             ],
         ],
     ],
     'params' => $params,
     'defaultRoute' => 'produto/index',
     'modules' => [
-        'api' => [
-            'class' => 'app\modules\api\ApiModule',
+        'apiproduto' => [
+            'class' => 'app\modules\apiproduto\ApiModule',
+        ],
+        'apiserial' => [
+            'class' => 'app\modules\apiserial\ApiModule',
         ],
     ],
 ];

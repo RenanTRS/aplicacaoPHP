@@ -1,16 +1,16 @@
 <?php
 
-namespace app\modules\api;
+namespace app\modules\apiproduto;
 
 /**
- * api module definition class
+ * apiproduto module definition class
  */
 class ApiModule extends \yii\base\Module
 {
     /**
      * {@inheritdoc}
      */
-    public $controllerNamespace = 'app\modules\api\controllers';
+    public $controllerNamespace = 'app\modules\apiproduto\controllers';
 
     /**
      * {@inheritdoc}
