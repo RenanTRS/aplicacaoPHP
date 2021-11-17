@@ -43,17 +43,20 @@ $config = [
             ],
         ],
         'db' => $db,
-        /*
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
             ],
         ],
-        */
     ],
     'params' => $params,
-    'defaultRoute' => 'produto/index'
+    'defaultRoute' => 'produto/index',
+    'modules' => [
+        'api' => [
+            'class' => 'app\modules\api\ApiModule',
+        ],
+    ],
 ];
 
 if (YII_ENV_DEV) {
