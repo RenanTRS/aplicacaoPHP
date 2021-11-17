@@ -71,6 +71,6 @@ class Produto extends \yii\db\ActiveRecord
      */
     public function getSerialnumberDatas()
     {
-        return $this->hasMany(SerialnumberData::className(), ['product_data_id' => 'id']);
+        return $this->hasMany(Serial::className(), ['product_data_id' => 'id']);
     }
 }
