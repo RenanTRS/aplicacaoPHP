@@ -53,6 +53,7 @@ $config = [
         */
     ],
     'params' => $params,
+    'defaultRoute' => 'produto/index'
 ];
 
 if (YII_ENV_DEV) {
